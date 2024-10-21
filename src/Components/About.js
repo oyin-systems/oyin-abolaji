@@ -13,7 +13,7 @@ export default function About() {
           </h2>
         </div>
 
-        <div className="px-20 my-10 tracking-widest space-y-6 leading-10 font-normal">
+        <div className="px-5 lg:px-20 my-5 lg:my-10 tracking-widest space-y-6 leading-10 font-normal">
           <p className="text-base lg:text-2xl text-justify">
             I am a frontend developer with a strong foundation in HTML, CSS and
             JavaScript. I have experience working with frameworks such as React,

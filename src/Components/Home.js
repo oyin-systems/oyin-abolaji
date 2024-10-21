@@ -12,18 +12,18 @@ export default function Hero() {
       className="max-w-screen h-screen px-10 md:pt-20 md:px-32 mx-auto flex flex-col md:flex-row items-center justify-between"
       id="home"
     >
-      <div className="flex flex-col items-center justify-center h-full px-4 md:ml-6 lg:ml-10 md:flex-row">
+      <div className="mt-16 lg:mt-0 flex flex-col items-center justify-center h-full px-4 md:ml-6 lg:ml-10 md:flex-row">
         <div className="flex flex-col justify-center h-full gap-2">
-          <p className="font-semibold text-3xl text-[#666666] flex items-center">
-            Hi there, I'm Oyindamola.{" "}
+          <p className="font-semibold text-xl lg:text-3xl text-[#666666] flex items-center">
+            Hi there, I'm Oyindamola.
             <span className="ml-2">
               <img src={Flag} alt="nigerian-flag" />
             </span>
           </p>
-          <h3 className="text-[3rem] md:text-[4rem] font-bold leading-[75px]">
+          <h3 className="text-[2rem] lg:text-[3rem] font-bold leading-[40px] lg:leading-[75px]">
             A Frontend Developer <br /> and Technical Writer.
           </h3>
-          <p className="text-xl md:text-2xl font-normal text-[#666666]">
+          <p className="text-lg lg:text-xl md:text-2xl font-normal text-[#666666]">
             I love to work on web applicatons using technologies like <br />
             JavaScript, ReactJs and Tailwind CSS.
           </p>

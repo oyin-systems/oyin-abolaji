@@ -94,7 +94,7 @@ export default function Stack() {
         <div className="mx-auto p-4 flex flex-col justify-center w-full">
           <h2 className="text-2xl font-normal lg:mb-20 mb-6">Tech Stack</h2>
         </div>
-        <div className="w-[60vw] mx-auto grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-2 items-center justify-center text-center">
+        <div className="w-[60vw] mx-auto grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-5 md:gap-2 items-center justify-center text-center">
           {tech.map(({ id, src, title }) => (
             <div
               key={id}

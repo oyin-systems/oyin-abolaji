@@ -55,17 +55,18 @@ export default function Articles() {
           <h2 className="text-2xl font-normal lg:mb-20 mb-6">Articles</h2>
           <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-5 p-10 bg-[#F2F2F2] dark:bg-[#333333] rounded-xl">
             {articles.map(({ id, src, read, topic }) => (
-              <div key={id} className="shadow-md shadow-[#666666] rounded-lg mx-3 h-[18rem]">
+              <div key={id} className="shadow-md shadow-[#666666] rounded-lg mx-3 mb-2 h-[18rem]">
                 <img
                   src={src}
                   alt="shoes-website"
                   className="rounded-md duration-200 hover:scale-105 w-full h-2/3"
                 />
-                <div className="flex justify-between items-center mx-6 mt-2">
-                  <h2 className="text-2xl font-medium text-center">
+                <div className="flex flex-col md:flex-row justify-between items-center mx-6 mt-2">
+                  <h2 className="text-xl md:text-2xl font-bold text-center mb-1">
                     {topic}
                   </h2>
-                  <MdArrowOutward size={25} />
+                  <MdArrowOutward size={25} className="cursor-pointer" onClick={() => window.open(read, "_blank")} />
+                  
                 </div>
               </div>
             ))}

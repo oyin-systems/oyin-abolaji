@@ -76,7 +76,7 @@ function App() {
       <ThemeWrapper>
         <Header />
 
-        <div className="fixed z-[1000] top-10 right-10 duration-100 dark:bg-black bg-[#F2F2F2] rounded-lg">
+        <div className="fixed z-[1000] top-10 right-40 lg:right-10 duration-100 dark:bg-black bg-[#F2F2F2] rounded-lg">
           {options.map((opt) => (
             <button
               key={opt.text}

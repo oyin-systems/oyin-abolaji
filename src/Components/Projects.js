@@ -70,7 +70,7 @@ export default function Projects() {
       stack: "HTML, CSS, JavaScript",
       name: "Weather App",
       about:
-        "App that fetches and shows current weather details for any location.",
+        "App that shows current weather for any location.",
     },
     {
       id: 7,
@@ -138,18 +138,18 @@ export default function Projects() {
             Selected Projects
           </h2>
 
-          <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-5 p-10 bg-[#F2F2F2] dark:bg-[#333333] rounded-xl">
+          <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-5 p-4 md:p-10 bg-[#F2F2F2] dark:bg-[#333333] rounded-xl">
             {projects.map(({ id, src, hosted, live, stack, name, about }) => (
               <div
                 key={id}
-                className="shadow-md shadow-[#666666] rounded-lg mx-3 h-[28rem]"
+                className="shadow-md shadow-[#666666] rounded-lg mx-3 h-[28rem] mb-5"
               >
                 <img
                   src={src}
                   alt="website-picture"
                   className="rounded-md duration-200 hover:scale-105 w-full h-1/2"
                 />
-                <div className="mx-6 mt-4 space-y-2.5">
+                <div className="mx-6 mt-4 space-y-1 md:space-y-2.5">
                   <h2 className="text-2xl font-medium">{name}</h2>
                   <p className="text-lg font-normal">{about}</p>
                   <p className="text-sm font-normal text-[#B3B3B3]">
@@ -162,7 +162,7 @@ export default function Projects() {
                     className="flex gap-2 w-fit px-3 py-2 mx-4 my-1 duration-200 hover:scale-105 hover:bg-blue-300 bg-[#666666] dark:bg-[#F2F2F2] text-white dark:text-[#333333] rounded-[1000px] hover:text-black"
                     onClick={() => window.open(hosted, "_blank")}
                   >
-                    <FaLink size={25} /> Live Demo
+                    <FaLink size={25} /> <span className="hidden lg:block">Live Demo</span>
                   </button>
 
                   <button
@@ -170,7 +170,7 @@ export default function Projects() {
                     onClick={() => window.open(live, "_blank")}
                   >
                     <FaGithub size={25} />
-                    View Code
+                    <span className="hidden lg:block">View Code</span>
                   </button>
                 </div>
               </div>
